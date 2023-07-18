@@ -1,4 +1,4 @@
-python_sources(name="lib", interpreter_constraints=["==3.8.*"])
+python_sources(name="lib", interpreter_constraints=["==3.8.inexistingversion"])
 
 pex_binary(
     name="pex",
