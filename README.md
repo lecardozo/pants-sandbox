@@ -1,7 +1,7 @@
 ## Setup
 
 ```shell
-git@github.com:lecardozo/pants-sandbox.git && cd pants-sandbox && git switch debug
+git clone git@github.com:lecardozo/pants-sandbox.git && cd pants-sandbox && git switch debug
 ```
 
 ## Command
