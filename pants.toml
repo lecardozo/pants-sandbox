@@ -4,8 +4,24 @@ backend_packages = [
   "pants.backend.python",
 ]
 
+[python]
+interpreter_constraints = ["CPython==3.8.*"]
+enable_resolves = true
+default_resolve = "default"
+
+[python.resolves]
+default = "default.lock"
 
 [source]
 root_patterns = [
-  '/src/python/**/'
+  '/src/python/'
+]
+
+[pex-cli]
+version = "v2.1.139"
+known_versions = [
+    "v2.1.139|macos_arm64|56761f3feb10a632ed82f590ad1fd49f3bdeb6785a48956abe6e5da9488a5305|4103625",
+    "v2.1.139|macos_x86_64|56761f3feb10a632ed82f590ad1fd49f3bdeb6785a48956abe6e5da9488a5305|4103625",
+    "v2.1.139|linux_x86_64|56761f3feb10a632ed82f590ad1fd49f3bdeb6785a48956abe6e5da9488a5305|4103625",
+    "v2.1.139|linux_arm64|56761f3feb10a632ed82f590ad1fd49f3bdeb6785a48956abe6e5da9488a5305|4103625"
 ]
